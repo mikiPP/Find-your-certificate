@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+body {
+  background-color: transparent;
+  position: relative;
+  height: 300px;
+  width: 365px;
+  padding: 0;
+  margin: 0;
+
+  border-radius: 8px;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+#app-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-shadow: 0px 2px 8px 0px #b8b8b840;
+
+  padding-left: 24px;
+  padding-right: 36px;
+}

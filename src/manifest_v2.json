@@ -1,0 +1,26 @@
+{
+  "name": "Find your certificate",
+  "manifest_version": 2,
+  "icons": {
+    "128": "FYC.png"
+  },
+  "background": {
+    "page": "html/background.html",
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "FYC.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+      "js": ["contentScript.bundle.js"],
+      "css": ["content.styles.css"]
+    }
+  ],
+  "options_page": "options.html",
+  "web_accessible_resources": ["content.styles.css", "FYC.png"],
+  "content_security_policy": "script-src 'self' *://localhost/*; object-src 'self';",
+  "permissions": ["scripting", "storage", "tabs", "*://localhost/*"]
+}
